@@ -94,7 +94,37 @@
       <a class="phone" href="tel:+7622620563"> 8 (622) 62-05-63 </a>
       <img src="#" alt="Логотип HTML-academy">
     </footer>
-
+    <form action="https://echo.htmlacademy.ru/"  method="get" class="visually-hidden search-form">
+      <button type="button" class="button-form-close">
+        <img src="#" alt="Крестик">
+      </button>
+      <h2> Поиск гостиницы в Седоне</h2>
+      <p class="arrival-date">
+        <label class="form-laber" >Дата заезда:
+        <input type="text" name="arrival-date" placeholder="27 апреля 2020" >
+        </label>
+      </p>
+      <p class="departure-date">
+        <label class="form-laber" >Дата выезда:
+        <input type="text" name="departure-date" placeholder="1 сентября 2023" >
+        </label>
+      </p>
+      <p class="adults">
+        <label class="form-laber" >Взрослые:
+        <input type="number" name="adults-quantity" placeholder="2" min="1">
+        </label>
+        <button class="button-adults">-</button>
+        <button class="button-adults">+</button>
+      </p>
+      <p class="children">
+        <label class="form-laber" >Взрослые:
+        <input type="number" name="children-quantity" placeholder="2" min="1">
+        </label>
+        <button type="button" class="button-adults">-</button>
+        <button type="button"class="button-adults">+</button>
+      </p>
+      <input  type="submit" name="to-find" value="Найти">
+    </form>
 
 
   </body>
