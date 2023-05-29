@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <img src="#" alt="Логотим сайта Седона">
+      <a class="navigation-link" href="#"><img src="#" alt="Логотим сайта Седона"></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-list-item">
@@ -31,24 +31,28 @@
             </a>
           </li>
         </ul>
-        <button class="main-button"  type="button">хочу сюда!</button>
+        <a class="main-button" href="#">хочу сюда!</a>
       </nav>
     </header>
     <main>
-      <img  src="#" alt="Вид на горы">
-      <img  src="#" alt="Добро пожаловать">
-      <h1>Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <section class="banner">
+        <img  src="#" alt="Добро пожаловать">
+        <h1 class="visually-hidden"> Седона </h1>
+      </section>
+
       <section class="advantages">
-        <img src="#" alt="Вид на город">
+        <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+
         <ul class="advantages-list">
           <li class="advantages-list-item"><h3>Настоящий городок</h3> Седона — не аттракцион для туристов, там течёт своя жизнь</li>
+          <li class="advantages-list-item"> <img src="#" alt="Вид на город"></li>
           <li class="advantages-list-item"><h3>Небольшая площадь</h3> Все достопримечательности находятся очень близко </li>
           <li class="advantages-list-item"><h3>Красивая дорога</h3> Ехать в Седону из Лас-Вегаса совсем не скучно! </li>
           <li class="advantages-list-item"><h3>Мало туристов</h3> Большинство едет в Гранд Каньон и толпится там</li>
           <li class="advantages-list-item"><h3>Там есть мост дьявола</h3> Да, по нему можно пройти! Если вы осмелитесь, разумеется</li>
+          <li class="advantages-list-item"> <img src="#" alt="Вид на мост дьявола"></li>
         </ul>
-        <img src="#" alt="Вид на мост дьявола">
 
         <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
@@ -59,16 +63,14 @@
         </ul>
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="main-button"  type="button">поиск гостинницы в седоне</button>
+        <a class="main-button"  href="#">поиск гостинницы в седоне</a>
       </section>
       <section class="newsletter">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" name="newsletter-email" value="Ваш e-mail">
-          <button class="newsletter-button" type="submit" value="подписаться">
-            <span class="newsletter-button">подписаться</span>
-          </button>
+          <button class="newsletter-button" type="submit" value="подписаться">подписаться</button>
         </form>
       </section>
 
@@ -92,42 +94,49 @@
         </li>
       </ul>
       <a class="phone" href="tel:+7622620563"> 8 (622) 62-05-63 </a>
-      <img src="#" alt="Логотип HTML-academy">
+      <a class="logo-link" href="#"><img src="#" alt="Логотип HTML-academy"></a>
     </footer>
-    <form action="https://echo.htmlacademy.ru/"  method="get" class="visually-hidden search-form">
-      <button type="button" class="button-form-close">
-        <img src="#" alt="Крестик">
-      </button>
-      <h2> Поиск гостиницы в Седоне</h2>
-      <p class="arrival-date">
-        <label class="form-laber" >Дата заезда:
-        <input type="text" name="arrival-date" placeholder="27 апреля 2020" >
-        </label>
-      </p>
-      <img src="#" alt="Кaлендарь">
-      <p class="departure-date">
-        <label class="form-laber" >Дата выезда:
-        <input type="text" name="departure-date" placeholder="1 сентября 2023" >
-        </label>
-      </p>
-      <img src="#" alt="Кaлендарь">
-      <p class="adults">
-        <label class="form-laber" >Взрослые:
-        <input type="number" name="adults-quantity" placeholder="2" min="1">
-        </label>
-        <button class="button-adults">-</button>
-        <button class="button-adults">+</button>
-      </p>
-      <p class="children">
-        <label class="form-laber" >Дети:
-        <input type="number" name="children-quantity" placeholder="2" min="1">
-        </label>
-        <button type="button" class="button-adults">-</button>
-        <button type="button"class="button-adults">+</button>
-      </p>
-      <input  type="submit" name="to-find" value="Найти">
-    </form>
+    <dialog class="search-form">
+      <form action="https://echo.htmlacademy.ru/"  method="get" class="visually-hidden search-form">
+        <button type="button" class="button-form-close">
+          <img src="#" alt="Крестик">
+        </button>
+        <h2> Поиск гостиницы в Седоне</h2>
+        <p class="arrival-date">
+          <label class="form-laber" >Дата заезда:
+          <input type="text" name="arrival-date" placeholder="27 апреля 2020" >
+          </label>
+          <img src="#" alt="Кaлендарь">
+        </p>
 
+        <p class="departure-date">
+          <label class="form-laber" >Дата выезда:
+          <input type="text" name="departure-date" placeholder="1 сентября 2023" >
+          </label>
+          <img src="#" alt="Кaлендарь">
+        </p>
+
+        <p class="adults">
+          <label class="form-laber" >Взрослые:
+          <input type="number" name="adults-quantity" placeholder="2" min="1">
+          </label>
+          <button class="button-adults">-</button>
+          <button class="button-adults">+</button>
+        </p>
+        <p class="children">
+          <label class="form-laber" >Дети:
+          <input type="number" name="children-quantity" placeholder="2" min="1">
+          </label>
+          <button type="button" class="button-adults">-</button>
+          <button type="button"class="button-adults">+</button>
+          <div class="hint">
+            <img src="#" alt="подсказка">
+            <p> Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+          </div>
+        </p>
+        <input  type="submit" name="to-find" value="Найти">
+      </form>
+    </dialog>
 
   </body>
 </html>
