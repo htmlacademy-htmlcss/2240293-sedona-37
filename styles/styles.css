@@ -13,15 +13,55 @@
   src: url(../fonts/ptsans-700.woff2) format(woff2);
   font-display: swap;
 }
+html{
+  height: 100%;
+}
 
 body {
-  font-family: "PT Sans", sans-serif;
+  margin: 0;
+   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  background-color: #F2F2F2;
+  height: 100%;
+
+}
+.page-wrapper{
   background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.main-container{
+  flex-grow: 1;
 }
 .visually-hidden {
   display: none;
+}
+
+.navigation-link-logo{
+  margin-right: 28px;
+}
+
+.navigation{
+  display: flex;
+  margin: 0 70px;
+}
+.navigation-user{
+  margin-left: auto;
+}
+.footer-wrapper {
+  margin: 0 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.catalog {
+  margin: 0 70px;
+  width: 1060px;
 }
 
 .navigation-link {
@@ -32,10 +72,7 @@ body {
  text-decoration: none;
 }
 .active-element {
-  text-decoration: underline;
-  text-decoration-color: #756257;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 21px;
+  border-bottom: #756257 2px solid;
 }
 
 .main-button{
@@ -60,14 +97,40 @@ body {
   width: 20px;
   height: 20px;
 }
-
-.banner {
-  background:
-  url(../images/index/index-background.jpg) no-repeat;
-  width: 1200px;
-  height: 458px;
+.favorites-counter{
+  background-color: #7DB54F;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
 }
 
+.banner {
+  background-image: url(../images/index/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 458px;
+}
+/* Просто попробовала как Вариант, дальше по заданию переделаю  */
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+}
+.advantages-list-item{
+  width: 400px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.services-list-item{
+  width: 400px;
+}
+/*  */
 .advantages h2 {
   font-weight: 700;
   font-size: 30px;
@@ -76,7 +139,7 @@ body {
 
 .advantages p {
   font-size: 22px;
-line-height: 26px;
+  line-height: 26px;
 }
 
 .advantages h3{
@@ -88,21 +151,29 @@ line-height: 26px;
 
 .backgraund-not-even {
   background:rgba(131, 179, 211, 0.12) ;
+
 }
 
 .backgraund-even {
   background: rgba(131, 179, 211, 0.2);
+
 }
 .backgraund-extreme {
   background-color: #83B3D3;
+  color: #FFFFFF;
+
 }
 
 .newsletter-form-main {
   color: #FFFFFF;
   background-color: #000000;
-  background: url(../images/index/Subscribe.jpg) no-repeat;
+  background-image: url(../images/index/Subscribe.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 415px;
   font-size: 22px;
   line-height: 26px;
+  width: 1200px;
+  height: 415px;
 }
 .newsletter-form-catalog {
   font-size: 22px;
@@ -198,7 +269,9 @@ line-height: 26px;
  text-transform: uppercase;
  }
 .filter{
-  background: url(../images/catalog/Filter.jpg) no-repeat ;
+  background-image: url(../images/catalog/Filter.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 1200px 412px;
   width: 1200px;
   height: 412px;
   color: #FFFFFF;
@@ -242,6 +315,7 @@ line-height: 26px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .buttom-reset{
@@ -294,8 +368,24 @@ line-height: 26px;
 .product-card b{
     font-weight: normal;
 }
+/* Перестали отображатья в браузере. Уточнить на созвоне */
+.rating_2 {
+  background-image: url(../images/catalog/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 48px;
+}
+.rating_3 {
+  background-image: url(../images/catalog/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 72px;
+}
+.rating_4 {
+  background-image: url(../images/catalog/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 96px;
+}
 
-.section-main .button-more-detailed{
+.product-list .button-more-detailed{
   background-color: #756157;
   border-radius: 4px;
   font-weight: 700;
@@ -304,7 +394,7 @@ line-height: 26px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
-.section-main .button-favourites{
+.product-list .button-favourites{
   background-color: #82B3D3;
   border-radius: 4px;
   font-weight: 700;
@@ -312,6 +402,8 @@ line-height: 26px;
   line-height: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 .product-rating{
   width: 140px;
@@ -343,7 +435,5 @@ line-height: 26px;
   color: #000000;
 }
 .section-footer{
-  width: 1060px;
-  height: 60px;
   border-top: 1px solid #E6E6E6;
 }
