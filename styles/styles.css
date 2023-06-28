@@ -39,6 +39,9 @@ body {
 .main-container{
   flex-grow: 1;
 }
+.main-header {
+  position: relative;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -51,10 +54,10 @@ body {
 }
 
 .navigation-link-logo{
-  margin: 0;
+  margin: 0 28px -6px 0;
   padding: 0;
-  margin-right: 28px;
   display: block;
+  height: 100%;
 }
 /* Нужно какое то другое решение */
 .navigation-link-img {
@@ -116,7 +119,11 @@ body {
  line-height: 24px;
  text-decoration: none;
  display: block;
- padding: 20px 16px;
+ padding: 0 16px ;
+}
+.text-navigation{
+  margin: 0;
+  padding: 20px 0;
 }
 
 .navigation-link-user{
@@ -129,7 +136,6 @@ body {
 
 .active-element {
   border-bottom: 2px solid #756257;
-
 }
 
 .main-button{
@@ -143,7 +149,7 @@ body {
   text-transform: uppercase;
   display: block;
   padding: 8px 34px;
-  margin: 20px 14px;
+  margin: 14px 20px;
   margin-right: 0;
 }
 
@@ -202,6 +208,10 @@ body {
   padding: 102px 85px;
   box-sizing: border-box;
   min-height: 385px;
+}
+
+.advantages-list-imeges{
+  display: block;
 }
 
 .services-list {
@@ -605,17 +615,29 @@ body {
   border-radius: 4px;
   padding: 20px;
   box-sizing: border-box;
-}
-.product-card:not(:nth-child(3n)){
-  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto 21px 36px 37px;
+  column-gap: 20px;
+  row-gap: 16px;
+  align-items: center;
+
 }
 
-/* в скринкасте говорили, что карты продуктов лучше сделать на гридах. Переделаю в след. ДЗ */
+.product-link{
+  display: block;
+  width: 300px;
+  min-height: 256px;
+  grid-column: 1 / -1;
+
+}
+
 .product-list{
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   padding: 0;
+  gap: 20px;
 }
 .product-card a{
   color: #000000;
@@ -626,26 +648,30 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 16px 0;
+  margin: 16px 0 0 0;
 }
 .product-card b{
   font-weight: normal;
+  justify-self: end;
 }
-/* Перестали отображатья в браузере. Уточнить на созвоне */
+
 .rating_2 {
   background-image: url(../images/catalog/icon-star.svg);
   background-repeat: repeat-x;
   width: 48px;
+  height: 37px;
 }
 .rating_3 {
   background-image: url(../images/catalog/icon-star.svg);
   background-repeat: repeat-x;
   width: 72px;
+  height: 37px;
 }
 .rating_4 {
   background-image: url(../images/catalog/icon-star.svg);
   background-repeat: repeat-x;
   width: 96px;
+  height: 37px;
 }
 
 .product-list .button-more-detailed{
@@ -664,6 +690,7 @@ body {
 .product-list .button-favourites{
   background-color: #82B3D3;
   border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -672,7 +699,7 @@ body {
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 8px 20px;
+  padding: 8px 0;
   min-width: 140px;
   min-height: 36px;
 }
