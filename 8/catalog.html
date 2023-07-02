@@ -24,7 +24,8 @@
               </li>
               <li class="navigation-list-item">
                 <a class="navigation-link">
-                  <p class="text-navigation active-element">Гостинницы</p></a>
+                  <p class="text-navigation active-element">Гостинницы</p>
+                </a>
               </li>
             </ul>
             <ul class="navigation-user">
@@ -52,11 +53,13 @@
             <h1>Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link breadcrumbs-link-index" href="index.html">
                   <span class="visually-hidden">на главную"</span>
                 </a>
               </li>
-              <li class="breadcrumbs-item"> Гостиницы  </li>
+              <li class="breadcrumbs-item">
+                <a href="#"class="breadcrumbs-link">Гостиницы</a>
+               </li>
             </ol>
           </header>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -103,10 +106,10 @@
             <fieldset class="catalog-filter-group catalog-filter-cost">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label class="catalog-text"> от
-                  <input type="text" name="from" value="0" >
+                  <input class="input-filter-cost" type="text" name="from" value="0" >
                 </label>
                 <label class="catalog-text"> до
-                  <input type="text" name="before" value="9000">
+                  <input class="input-filter-cost" type="text" name="before" value="9000">
                 </label>
                 <ul class="slider-list catalog-filter-list">
                   <li class="form-buttom-range"><span class="visually-hidden"> Выбор нижней границы суммы</span>
@@ -149,7 +152,7 @@
           </header>
           <ul class="product-list">
             <li class="product-card">
-              <a href="#" class="product-card-link product-link">
+              <a href="#" class="product-card-link">
                 <img src="images/catalog/hotel-1.jpg"  width="300" height="212" alt="Amara Resort & Spa">
                 <h3 class="product-title">Amara Resort & Spa</h3>
               </a>
@@ -163,7 +166,7 @@
               <p class="product-rating">Рейтинг: 8,5</p>
             </li>
             <li class="product-card">
-              <a href="#" class="product-card-link product-link">
+              <a href="#" class="product-card-link">
                 <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
                 <h3 class="product-title">Villas at Poco Diablo</h3>
               </a>
@@ -177,7 +180,7 @@
               <p class="product-rating">Рейтинг: 9,2</p>
             </li>
             <li class="product-card">
-              <a href="#" class="product-card-link product-link">
+              <a href="#" class="product-card-link">
                 <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
                 <h3 class="product-title">Desert Quail Inn</h3>
               </a>
@@ -191,7 +194,7 @@
               <p class="product-rating">Рейтинг: 6,9</p>
             </li>
             <li class="product-card">
-              <a href="#" class="product-card-link product-link">
+              <a href="#" class="product-card-link">
                 <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
                 <h3 class="product-title">GreenTree Inn</h3>
               </a>
