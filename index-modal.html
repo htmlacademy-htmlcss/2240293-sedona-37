@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="dialog-form-open">
     <div class="page-wrapper">
       <header class="main-header">
         <nav class="navigation">
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="main-button" href="index-modal.html">хочу сюда!</a>
+              <a class="main-button" href="#">хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -79,7 +79,7 @@
           <div class="section-wrapper">
             <h2 class="section-title">Заинтересовались?</h2>
             <p class="section-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="main-button section-button"  href="index-modal.html">поиск гостинницы в седоне</a>
+            <a class="main-button section-button"  href="#">поиск гостинницы в седоне</a>
           </div>
         </section>
         <section class="newsletter newsletter-form-main">
@@ -118,12 +118,13 @@
           </a>
       </div>
       </footer>
-      <div class="dialog-wrapper dialog-wrapper-close">
-        <dialog class="dialog-form">
+      <div class="dialog-wrapper ">
+        <dialog class="dialog-form" open>
           <button type="button" class="button-form-close ">
             <img src="images/index/icon-cross.svg" width="14" height="14" alt="Закрыть">
             <a class="form-close" href="index.html"></a>
           </button>
+          </a>
           <form action="https://echo.htmlacademy.ru/"  method="get" class="search-form">
             <h2 class="dialog-form-title"> Поиск гостиницы в Седоне</h2>
             <label class="form-laber" ><span class="laber-text">Дата заезда:</span>
