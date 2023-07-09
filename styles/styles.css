@@ -839,41 +839,39 @@ body {
   box-sizing: border-box;
   border: none;
   border-radius: 3px;
+  opacity: 0.3;
 }
 
-.button-quantity:hover {
+.button-quantity:hover{
   opacity: 1;
 }
 
 .button-quantity:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
+  opacity: 1;
 }
 
 .button-quantity:active {
   opacity: 0.2;
 }
 
-.quantity-less::before {
+.quantity-less {
   display: block;
   width: 20px;
   height: 20px;
   background-image: url(../images/index/icon-minus.svg);
   background-repeat: no-repeat;
   background-position: center;
-  content: "";
-  opacity: 0.3;
 }
 
-.quantity-more::before {
+.quantity-more {
   display: block;
   width: 20px;
   height: 20px;
-  content: "";
   background-image: url(../images/index/icon-plus.svg);
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.3;
 }
 
 .hint {
@@ -904,7 +902,7 @@ body {
   left: 50%;
   display: none;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
   margin-top: 15px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -951,6 +949,7 @@ body {
 .button-form-search:hover,
 .button-form-search:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .button-form-search:active {
