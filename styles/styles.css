@@ -503,7 +503,7 @@ body {
 
 .newsletter-input {
   padding: 12px 20px;
-  width: 452px;
+  min-width: 452px;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -559,7 +559,7 @@ body {
 }
 
 .phone {
-  min-width: 720px;
+  width: 720px;
   margin-right: auto;
   color: #000000;
   font-size: 40px;
@@ -1416,7 +1416,6 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto 21px 36px 37px;
   column-gap: 20px;
   row-gap: 16px;
   align-items: center;
@@ -1466,6 +1465,10 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.product-text{
+  margin: 0;
 }
 
 .product-cost {
