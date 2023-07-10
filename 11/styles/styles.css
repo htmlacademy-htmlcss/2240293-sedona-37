@@ -107,6 +107,7 @@ body {
   padding: 0;
   list-style-type: none;
   flex-wrap: wrap;
+  max-width: 470px;
 }
 
 .navigation-user {
@@ -503,7 +504,7 @@ body {
 
 .newsletter-input {
   padding: 12px 20px;
-  width: 452px;
+  min-width: 452px;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -559,7 +560,7 @@ body {
 }
 
 .phone {
-  min-width: 720px;
+  width: 720px;
   margin-right: auto;
   color: #000000;
   font-size: 40px;
@@ -838,41 +839,39 @@ body {
   box-sizing: border-box;
   border: none;
   border-radius: 3px;
+  opacity: 0.3;
 }
 
-.button-quantity:hover {
+.button-quantity:hover{
   opacity: 1;
 }
 
 .button-quantity:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
+  opacity: 1;
 }
 
 .button-quantity:active {
   opacity: 0.2;
 }
 
-.quantity-less::before {
+.quantity-less {
   display: block;
   width: 20px;
   height: 20px;
   background-image: url(../images/index/icon-minus.svg);
   background-repeat: no-repeat;
   background-position: center;
-  content: "";
-  opacity: 0.3;
 }
 
-.quantity-more::before {
+.quantity-more {
   display: block;
   width: 20px;
   height: 20px;
-  content: "";
   background-image: url(../images/index/icon-plus.svg);
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.3;
 }
 
 .hint {
@@ -903,7 +902,7 @@ body {
   left: 50%;
   display: none;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
   margin-top: 15px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -950,6 +949,7 @@ body {
 .button-form-search:hover,
 .button-form-search:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .button-form-search:active {
@@ -985,6 +985,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 0 40px 0;
   padding: 0;
   list-style-type: none;
@@ -1357,10 +1358,12 @@ body {
 
 .sorting-link {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-left: auto;
   list-style-type: none;
+  max-width: 230px;
 }
 
 .sorting-link-botton {
@@ -1416,7 +1419,6 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto 21px 36px 37px;
   column-gap: 20px;
   row-gap: 16px;
   align-items: center;
@@ -1466,6 +1468,10 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.product-text{
+  margin: 0;
 }
 
 .product-cost {
@@ -1585,8 +1591,8 @@ body {
 }
 
 .pagination-item {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   margin-right: 8px;
   background: #82B3D3;
   border-radius: 4px;
@@ -1596,8 +1602,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   margin-right: 8px;
   background: #FFFFFF;
   border-radius: 4px;
