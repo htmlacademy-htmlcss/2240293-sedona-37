@@ -11,7 +11,7 @@
 
   <body>
     <div class="page-wrapper">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-link-logo" href="index.html"><img class="navigation-link-img" src="images/logo.png" width="140" height="70" alt="Логотим сайта Седона"></a>
           <ul class="navigation-list">
@@ -42,7 +42,7 @@
         </nav>
 
       </header>
-      <main class="main-container">
+      <main class="main-container" data-test="main">
         <section class="filter">
           <header class="breadcrumbs-header">
             <h1 class="breadcrumbs-header-title">Гостиницы Седоны</h1>
@@ -57,7 +57,7 @@
               </li>
             </ol>
           </header>
-          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
@@ -129,7 +129,7 @@
             </fieldset>
           </form>
         </section>
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <header class="section-header">
             <h2 class="header-title"> Найдено гостиниц: <span>38</span></h2>
             <form class="sorting" action="https://echo.htmlacademy.ru/" method="get">
@@ -229,7 +229,7 @@
           </footer>
         </section>
         <section class="newsletter newsletter-form-catalog">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <h2 class="newsletter-title" data-test="subscribe">Подпишитесь на рассылку</h2>
           <p class="section-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form " action="https://echo.htmlacademy.ru/" method="post">
             <input class="newsletter-input" type="email" name="newsletter-email" placeholder="Ваш e-mail">
@@ -237,7 +237,7 @@
           </form>
         </section>
       </main>
-      <footer>
+      <footer data-test="footer">
         <div class="footer-wrapper">
           <ul class="footer-social-list">
             <li class="footer-social-item">
