@@ -385,6 +385,10 @@ body {
   padding: 0 29px;
 }
 
+.advantages-image{
+  display: block;
+  object-fit: cover;
+}
 
 .advantages-title::after {
   display: block;
@@ -974,7 +978,6 @@ body {
   line-height: 23px;
   background-image: url(../images/catalog/filter.jpg);
   background-repeat: no-repeat;
-  background-size: 1200px 412px;
   background-color: rgba(117, 97, 87, 1);
   background-size: cover;
 }
