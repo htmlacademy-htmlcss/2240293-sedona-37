@@ -491,7 +491,7 @@ body {
   background-color: #000000;
   background-image: url(../images/index/subscribe.jpg);
   background-repeat: no-repeat;
-  background-size: 1200px 415px;
+  background-size: cover;
 }
 
 
