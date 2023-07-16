@@ -666,6 +666,9 @@ body {
   height: 52px;
   padding: 0;
   background: #F2F2F2;
+  background-image: url(../images/index/icon-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
   border-radius: 50%;
   cursor: pointer;
