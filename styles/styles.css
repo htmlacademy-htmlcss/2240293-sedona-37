@@ -277,7 +277,7 @@ body {
   min-height: 485px;
   background-image: url(../images/index/index-background.jpg);
   background-repeat: no-repeat;
-  background-size: 1200px 485px;
+  background-size: 1200px 100%;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
